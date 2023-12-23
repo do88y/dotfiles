@@ -115,13 +115,12 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# asdf-vm
-. "$(brew --prefix asdf)/libexec/asdf.sh"
-. $HOME/.asdf/plugins/java/set-java-home.zsh
-source "$HOME/.config/asdf-direnv/zshrc"
-source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
-export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
-
 #libpq
 export LDFLAGS="-L/opt/homebrew/opt/libpq/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/libpq/include"
+
+#asdf
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+eval "$(asdf exec direnv hook zsh)"
+source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
+
