@@ -124,3 +124,8 @@ export CPPFLAGS="-I/opt/homebrew/opt/libpq/include"
 eval "$(asdf exec direnv hook zsh)"
 source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
 
+# go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+
+export PATH="/opt/homebrew/opt/nvim/bin/:$PATH"
