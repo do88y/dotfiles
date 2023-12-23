@@ -125,3 +125,9 @@ export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 #libpq
 export LDFLAGS="-L/opt/homebrew/opt/libpq/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/libpq/include"
+
+# go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+
+export PATH="/opt/homebrew/opt/nvim/bin/:$PATH"
