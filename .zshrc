@@ -129,3 +129,5 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 
 export PATH="/opt/homebrew/opt/nvim/bin/:$PATH"
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
