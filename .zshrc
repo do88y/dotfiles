@@ -30,6 +30,9 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Case-sensitive completion must be off. _ and - will be interchangeable.
 # HYPHEN_INSENSITIVE="true"
 
+# Disable instant prompt either by running p10k configure or by manually
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
+
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
 # zstyle ':omz:update' mode auto      # update automatically without asking
@@ -131,3 +134,13 @@ export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 export PATH="/opt/homebrew/opt/nvim/bin/:$PATH"
 export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+# alias
+alias lz="lazygit"
+alias run="./gradlew bootRun -x test"
+alias test="./gradlew test"
+alias release="./gradlew release"
+alias gpt="cd workspace/poly-gpt-server"
+alias hub="cd workspace/poly-hub-server"
+alias corpus="cd workspace/poly-corpus-api-server"
+alias ai="cd workspace/poly-ai-platform"
