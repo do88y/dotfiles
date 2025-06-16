@@ -1,5 +1,12 @@
 .DS_Store
 
+# Vim swap files
+*.swp
+*.swo
+*~
+.*.swp
+.*.swo
+
 # raycast
 .config/raycast/extensions/*
 
