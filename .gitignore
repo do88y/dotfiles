@@ -1,1 +1,7 @@
 .DS_Store
+
+# raycast
+.config/raycast/extensions/*
+
+#github-copilot
+.config/github-copilot/*
