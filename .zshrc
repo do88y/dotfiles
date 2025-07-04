@@ -123,9 +123,10 @@ export LDFLAGS="-L/opt/homebrew/opt/libpq/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/libpq/include"
 
 #asdf
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
 eval "$(asdf exec direnv hook zsh)"
 source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
+export ASDF_DATA_DIR="/Users/seulgi/.asdf"
+export PATH="$ASDF_DATA_DIR/shims:$PATH"
 
 # go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
