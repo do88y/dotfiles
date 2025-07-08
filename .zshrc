@@ -113,8 +113,6 @@ source $ZSH/oh-my-zsh.sh
 # Homebrew
 export PATH=/opt/homebrew/bin:$PATH
 
-source ~/powerlevel10k/powerlevel10k.zsh-theme
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
@@ -124,8 +122,7 @@ export CPPFLAGS="-I/opt/homebrew/opt/libpq/include"
 
 #asdf
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
-eval "$(asdf exec direnv hook zsh)"
-source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
+export PATH="$HOME/.asdf/shims:$PATH"
 
 # go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
@@ -144,3 +141,7 @@ alias gpt="cd workspace/poly-gpt-server"
 alias hub="cd workspace/poly-hub-server"
 alias corpus="cd workspace/poly-corpus-api-server"
 alias ai="cd workspace/poly-ai-platform"
+alias growth="cd workspace/dev-growth"
+
+
+source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
