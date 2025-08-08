@@ -147,3 +147,5 @@ alias growth="cd workspace/dev-growth"
 
 
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
+eval "$(direnv hook zsh)"
+eval "$(asdf exec direnv hook zsh)"
