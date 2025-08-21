@@ -10,5 +10,17 @@
 # raycast
 .config/raycast/extensions/*
 
-#github-copilot
+# github-copilot
 .config/github-copilot/*
+
+# gh
+.config/gh/*
+
+# configstore
+.config/configstore/*
+
+# iterm2
+.config/iterm2/*
+
+# jgit
+.config/jgit/*
